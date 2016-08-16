@@ -44,6 +44,7 @@ namespace WeatherApp
                     File.WriteAllBytes(fileUrl, bytes);
                 }
             }
+
             BitmapImage image = new BitmapImage(new Uri(fileUrl));
 
             WeatherImage.Source = image;
